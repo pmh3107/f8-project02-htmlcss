@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --primary-color: #ffb900;
+  --font-heading: Sen, sans-serif;
+}
 html {
   font-size: 62.5%;
 }
@@ -31,7 +35,9 @@ a {
   background: #171100;
   border-radius: 24.5px;
 }
-
+.btn :hover {
+  opacity: 0.9;
+}
 /* Header */
 .header {
   background-color: #fffcf4;
@@ -61,7 +67,6 @@ a {
 }
 .navbar li:hover,
 .navbar li.active a {
-  /* font-weight: 600; */
   text-shadow: 1px 0 0 currentColor;
   color: #171100;
 }
@@ -179,19 +184,33 @@ a {
 .content-block .detail-courses {
   margin-top: 38px;
 }
+.content-block .cta-group {
+  display: flex;
+  align-items: center;
+}
 .content-block .btn-see-more {
   width: 180px;
   line-height: 64px;
   border-radius: 32px;
-  background-color: #ffb900;
+  background-color: var(--primary-color);
   font-size: 1.8rem;
 }
 .content-block .watch-video {
   background: none;
   border: none;
 }
+.content-block .watch-video .icon {
+  display: flex;
+  align-items: center;
+  margin-left: 28px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.66;
+  text-align: left;
+}
 .content-block .watch-video img {
   padding: 14px;
   border-radius: 50%;
   background: #ffffff;
+  margin-right: 14px;
 }
