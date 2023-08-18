@@ -14,6 +14,21 @@ body {
 }
 
 /* common */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+.line-clamp.line-4 {
+  --line-clamp: 4;
+}
+.word-break-all {
+  word-break: break-all;
+}
 .main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -320,6 +335,7 @@ a {
 }
 .popular .course-item .title a {
   color: #171100;
+  padding-right: 6px;
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.66; /* 166.667% */
@@ -349,4 +365,68 @@ a {
 .popular .btn-book-now:hover {
   background-color: var(--primary-color);
   color: #fff;
+}
+
+/* Feedback */
+.feedback {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #2e2100;
+}
+.feedback .feedback-list {
+  display: flex;
+  overflow: hidden;
+}
+.feedback .feedback-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-shrink: 0;
+}
+.feedback .avatar {
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.feedback .feedback-item .title {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: "Sen";
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.41; /* 141.667% */
+}
+.feedback .feedback-item .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.85; /* 185.714% */
+}
+
+.feedback .dot {
+  display: inline-block;
+  margin-top: 28px;
+  padding-left: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background: #634700;
+  cursor: pointer;
+}
+.feedback .dot.active {
+  background-color: var(--primary-color);
+  cursor: default;
+}
+.feedback .content {
+  width: 63.2%;
+}
+.feedback .content .quotes {
+  margin-left: 30px;
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.53; /* 153.846% */
 }
