@@ -44,6 +44,14 @@ a {
   font-weight: 700;
   letter-spacing: -1.16px;
 }
+.heading.lv1 {
+  font-size: 5.8rem;
+  line-height: 1.17; /* 117.241% */
+}
+.heading.lv2 {
+  font-size: 3.8rem;
+  line-height: 1.26;
+}
 .btn {
   display: inline-block;
   min-width: 118px;
@@ -192,10 +200,7 @@ a {
   width: 52%;
   padding: 56px 0 0 130px;
 }
-.heading.lv1 {
-  font-size: 5.8rem;
-  line-height: 1.17; /* 117.241% */
-}
+
 .hero .desc {
   margin-top: 22px;
   color: #5f5b53;
@@ -261,10 +266,6 @@ a {
 .popular {
   padding: 65px 0;
   margin-top: 135px;
-}
-.popular .heading.lv2 {
-  font-size: 3.8rem;
-  line-height: 1.26;
 }
 .popular-top .desc {
   margin-top: 16px;
@@ -429,4 +430,55 @@ a {
   font-style: italic;
   font-weight: 400;
   line-height: 1.53; /* 153.846% */
+}
+/* Feature */
+.feature {
+  margin-top: 200px;
+}
+.feature .body {
+  display: flex;
+  justify-content: space-between;
+}
+.feature .images {
+  display: flex;
+}
+.feature .images img {
+  width: 270px;
+  height: 404px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+.feature .body .feature-img1 {
+  margin: 34px 30px 0 0;
+}
+.feature .content {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature .desc {
+  margin-top: 16px;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+}
+
+.feature .btn-sign-up {
+  margin-top: 32px;
+  width: 137px;
+  border-radius: 26px;
+  background: var(--primary-color);
+}
+
+.feature-2 .content {
+  width: 48.7%;
+  margin-top: 71px;
+  justify-content: normal;
+}
+.feature-2 .images img {
+  width: 470px;
+  height: 440px;
 }
