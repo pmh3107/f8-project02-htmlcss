@@ -589,11 +589,11 @@ a {
 }
 .footer .row {
   display: flex;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #59554b;
   padding-bottom: 38px;
 }
 .footer .row .colum {
-  width: 21.6%;
+  width: 20.7%;
 }
 .footer .row .colum:first-child {
   width: 35%;
@@ -612,7 +612,7 @@ a {
 }
 .heading.lv3 {
   display: inline-block;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #59554b;
   padding: 0 48px 14px 0;
   color: #fff;
   font-size: 1.6rem;
